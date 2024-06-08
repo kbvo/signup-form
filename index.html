@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <img src="designs/odin-lined.png" alt="odin project logo" id="logoImage">
+            <div class="logoText">ODIN</div>
+        </div>
+        <div class="credits">Photo by <a href="https://unsplash.com/@haliewestphoto" class="credit">Halie West</a> on <a href="https://unsplash.com" class="credit">Unsplash</a></div>
+    </div>
+    <div class="main">
+        <form action="#">
+            <div class="header">
+                <div class="desc">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</div>
+                <div class="desc">You <em>know</em> you want to.</div>
+            </div>
+            <div class="form">
+                <fieldset>
+                    <legend>Let's do this!</legend>
+                    <div class="name">
+                        <div class="item">
+                            <label for="firstName">FIRST NAME</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="item">
+                            <label for="lastName">LAST NAME</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+                    <div class="contact">
+                        <div class="item">
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="item">
+                            <label for="phoneNumber">PHONE NUMBER</label>
+                            <input type="tel" id="phoneNumber" name="phoneNumber" pattern="^\+?[0-9\s\-\(\)]*$" placeholder="+1 (555) 555-5555" required>
+                        </div>
+                    </div>
+                    <div class="password">
+                        <div class="item">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" id="userPassword" name="userPassword" minlength="5" maxlength="20" required>
+                            <span id="passwordError"></span>
+                        </div>
+                        <div class="item">
+                            <label for="confirmPassword">CONFIRM PASSWORD</label>
+                            <input type="password" id="confirmPassword" name="confirmPassword" minlength="5" maxlength="20" required>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="footer">
+                <button type="submit" id="submit">Create Account</button>
+                <div class="loginPrompt">Already have an account? <a href="#" class="loginLink">Log in</a></div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
